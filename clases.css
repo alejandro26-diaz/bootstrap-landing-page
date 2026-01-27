@@ -1,0 +1,22 @@
+.logo-navbar {
+    height: 28px;
+    /* AJUSTA AQUÍ */
+    width: auto;
+}
+
+/* El wrapper toma toda la altura disponible */
+.img-wrapper {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    /* centra vertical */
+    justify-content: center;
+    /* centra horizontal */
+}
+
+/* La imagen se adapta sin recortarse */
+.img-ajustada {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
