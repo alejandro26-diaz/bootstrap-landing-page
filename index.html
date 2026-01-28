@@ -15,11 +15,11 @@
     <title>scroll web</title>
 </head>
 
-<body>
+<body style="position: relative;" data-bs-spy="scroll" data-bs-target="#navbar-example3" data-bs-offset="0">
     <h1 class="text-primary">مرحبًا بالعالم!</h1>
 
     <!--navbar-->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <nav id="navbar-example3"  class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <!--navbar-expand-lg:hace al nabar responive, el menu se muestra colapsado pasand a una hamburguesa en pantallas menores a lg. desde lg en adelante, se muestraa expandido; fixed-top: la navbar queda fija arriba al hacer scroll -->
         <div class="container-fluid">
             <!--container-fluid: contenedor a ancho completo, a diferencia de container que tiene max-width y va centrado-->
@@ -181,12 +181,12 @@
                     <div class="accordion" id="accordionaExample">
                         <div class="accordion-item">
                             <h2 class="accordion-header">
-                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                                     Accordion Item #1
                                 </button>
                             </h2>
-                            <div id="collapseOne" class="accordion-collapse collapse show"
+                            <div id="collapseOne" class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
                                     <strong>This is the first item’s accordion body.</strong> It is shown by default,
@@ -215,7 +215,6 @@
                                     ⵜⴱⴻⴷⴷⴻⵍⴻⴹ ⴽⵔⴰ ⵙⴻⴳ ⵡⴰⵢⴰ ⵙ CSS ⵏ ⵓⵙⵎⴻⵍ ⵏⴻⵖ ⵙ ⵓⵙⴱⴻⴷⴷⵉ ⵏ ⵢⵉⵎⵓⵜⵜⵉⵢⴻⵏⵏⵏⴻⵖ ⵏ ⵜⵎⴻⵥⴷⵉⵜ. ⵉⵍⴰⵇ
                                     ⴷⴰⵖⴻⵏ ⴰⴷ ⴷⵏⴻⵙⵎⴻⴽⵜⵉ ⴱⴻⵍⵍⵉ ⵇⵔⵉⴱ ⵢⴰⵍ HTML ⵢⴻⵣⵎⴻⵔ ⴰⴷ ⵢⴻⴽⵛⴻⵎ ⴷⴰⵅⴻⵍ ⵏ
                                     <code>.accordionbody</code>, ⵖⴰⵙ ⴰⴽⴽⴻⵏ ⴰⴱⴻⴷⴷⴻⵍⵏⵏⵉ ⵢⴻⵜⵜⵃⴻⵜⵜⵉⵎ ⴰⵙⴻⵏⵇⴻⵙ ⵏ ⵜⵖⴰⵡⵙⵉⵡⵉⵏ.
-
                                 </div>
                             </div>
                         </div>
@@ -275,7 +274,8 @@
                             <li class="list-group-item">And a fifth one</li>
                         </ul>
                         <div class="card-body">
-                            <button btn btn-outline-dark>
+                            <button btn btn-outline-dark
+                            data-bs-toggle="modal" data-bs-target="#exampleModal1">
                                 Suscribete
                             </button>
                         </div>
@@ -295,7 +295,7 @@
                             <li class="list-group-item">And a fifth one</li>
                         </ul>
                         <div class="card-body">
-                            <button btn btn-outline-dark>
+                            <button btn btn-outline-dark data-bs-toggle="modal" data-bs-target="#exampleModal2">
                                 Suscribete
                             </button>
                         </div>
@@ -315,7 +315,7 @@
                             <li class="list-group-item">And a fifth one</li>
                         </ul>
                         <div class="card-body">
-                            <button btn btn-outline-dark>
+                            <button btn btn-outline-dark data-bs-toggle="modal" data-bs-target="#exampleModal3">
                                 Suscribete
                             </button>
                         </div>
@@ -325,6 +325,70 @@
         </div>
 
     </section>
+
+    <!--Footer-->
+    <footer class="container-fluid bg-dark py-5 text-center text-light">
+        .ブランディティス、クイブズダムを興奮させます。アニミはテンポラ・アキュサンティウム・レピュディアンダエ、アペリアム・ディフィニティオ・ドロラム・エクスペディタ・ヴォルプタス・ベリタティス・トータム・ディグニッシモス・レクサンダエ・ニシ・ディクタ！ミニマ、テンポラを選択してください!
+    </footer>
+
+
+        <!--Modal 1 -->
+
+    <div class="modal fade" id="exampleModal1" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Que me ves sigue bajando
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Modal 2-->
+    <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title fs-5" id="exampleModalLabel2">Modal title 2</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Estos son los beneficios de tu suscripción
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <!--Modal 3-->
+        <div class="modal fade" id="exampleModal3" tabindex="-1" aria-labelledby="exampleModalLabe3" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title fs-5" id="exampleModalLabe3">Modal title 3</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Si ya no escogiste aquí ya ni modo
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
 
